@@ -40,6 +40,7 @@ setup(
         'pyyaml',
         'dj-database-url',
         'django-rest-framework',
+        'psycopg2'
     ],
     dependency_links=['http://github.com/qubitdigital/json-logic-py/tarball/master#egg=package-1.0'],
 )
