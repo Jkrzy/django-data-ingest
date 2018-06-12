@@ -1,0 +1,13 @@
+---
+applications:
+- name: dj-data-ingest-default
+  buildpack: python_buildpack
+  memory: 512M
+  path: .
+  stack: cflinuxfs2
+  command: bash deploy.sh
+  timeout: 180
+  env:
+  instances: 1
+  services:
+    - djdi-default-pg

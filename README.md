@@ -5,8 +5,7 @@ to a central
 gathering point.  Each file generally contains multiple data rows, and
 each user may submit multiple files.
 
-The [default installation](docs/default.md) exposes a very basic and minimal
-workflow, which can be [customized](docs/customize.md) for your needs.
+---
 
 ## Features
 
@@ -17,6 +16,57 @@ workflow, which can be [customized](docs/customize.md) for your needs.
 - Re-submit previous submissions
 - Flexible ultimate destination for data
 - [API](docs/api.md) for validation
+
+---
+
+## Requirements
+
+* Python (3.5, 3.6)
+* Django (1.11)
+* Goodtables
+* pyyaml
+* django-rest-framework
+* psycopg2
+
+---
+
+## Installation
+
+Install using `pipenv`...
+
+    pipenv install django-data-ingest
+
+Add `'data_ingest'` to your `INSTALLED_APPS` setting.
+
+    INSTALLED_APPS = (
+        ...
+        'data_ingest',
+    )
+
+---
+
+## Examples
+
+Several [examples are provided](./examples/) to demonstrate default and customized
+behavior of  `data_ingest`.
+
+### [default installation](examples/default/README.md)
+ 
+### [p02_budgets](examples/p02_budgets/README.md)
+
+### [p03_budgets](examples/p0_budgets/README.md)
+
+
+## Development
+
+To start developing on Django Data Ingest, clone the repository:
+
+    git clone git@github.com:18f/django-data-ingest.git
+
+Install development dependencies:
+
+    pipenv install --dev
+
 
 ## Contributing
 

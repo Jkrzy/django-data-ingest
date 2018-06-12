@@ -1,0 +1,5 @@
+psycopg2
+json_logic
+dj_database_url
+gunicorn
+-e git://github.com/18F/django-data-ingest.git#egg=django-data-ingest
